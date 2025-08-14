@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #373b44, #4286f4);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.msgcontainer{
+    
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px 0 500px 0;
+}
+
+.hide {
+    display: none;
+}
+
+#msg{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#newbtn{
+     margin-top: 20px;
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.container{
+    background-color: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+
+.heading{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+#turnIndicator{
+    padding-bottom:10px
+}
+
+.game{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    gap:10px;
+    justify-content: center;
+}
+
+.box{
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    font-size: 3.5rem;
+    font-weight:bold;
+    color:white;
+    border:2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.red{
+    color:red
+}
+
+.green{
+    color:green
+}
+
+.box:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#reset:hover {
+    background: #e63946;
+    transform: scale(1.05);
+}
