@@ -94,8 +94,10 @@ const resetgame=()=>{
     count=0;
     boxanables();
     msgcontainer.classList.add("hide");
+    document.getElementById("turnIndicator").innerText = "";
 }
 
 
 newbtn.addEventListener("click",resetgame);
+
 resetbtn.addEventListener("click",resetgame);
