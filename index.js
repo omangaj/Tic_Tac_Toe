@@ -71,6 +71,7 @@ const drawgame=()=>{
     msg.innerText="Its a Draw game";
     msgcontainer.classList.remove("hide");
     boxdisables();
+    document.getElementById("turnIndicator").innerText = "";
 }
 
 let checkWinner=()=>{
@@ -101,3 +102,4 @@ const resetgame=()=>{
 newbtn.addEventListener("click",resetgame);
 
 resetbtn.addEventListener("click",resetgame);
+
